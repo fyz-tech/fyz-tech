@@ -20,7 +20,6 @@ app.config["SECRET_KEY"] = SECRET_KEY
 
 # ================= MongoDB Connection =================
 
-SECRET_KEY = os.getenv("SECRET_KEY")
 
 client = MongoClient(
     os.getenv("MONGO_URI"),
@@ -217,4 +216,5 @@ def view_applications():
 # ================= RUN =================
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port)
