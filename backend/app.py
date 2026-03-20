@@ -7,6 +7,10 @@ import datetime
 import bcrypt
 from functools import wraps
 from bson.objectid import ObjectId
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 app = Flask(__name__)
 CORS(app)
@@ -15,8 +19,10 @@ SECRET_KEY = "fyzsecretkey"
 
 # ================= MongoDB Connection =================
 
+SECRET_KEY = os.getenv("SECRET_KEY")
+
 client = MongoClient(
-    "mongodb+srv://fyzadmin:fyz12345@cluster0.bvdotlh.mongodb.net/?appName=Cluster0",
+    os.getenv("MONGO_URI"),
     tlsCAFile=certifi.where()
 )
 
@@ -130,7 +136,7 @@ def contact():
 
     contact_data = {
         "name": data.get("name"),
-        "email": data.get("email"),
+        "email": data.get("email"), 
         "phone": data.get("phone"),
         "company": data.get("company"),
         "message": data.get("message"),
