@@ -41,75 +41,71 @@ message:""
 });
 
 
+const handleSubmit = async (e) => {
+  e.preventDefault();
 
+  try {
+    const res = await fetch("https://fyz-backend.onrender.com/api/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(formData)
+    });
 
+    const data = await res.json();
 
-const handleChange = (e)=>{
-setFormData({
-...formData,
-[e.target.name]:e.target.value
-});
+    alert(data.message);
+
+    setFormData({
+      name: "",
+      email: "",
+      phone: "",
+      company: "",
+      message: ""
+    });
+
+  } catch (err) {
+    console.log(err);
+    alert("Error submitting form");
+  }
 };
 
-const handleSubmit = async (e)=>{
-e.preventDefault();
 
-try{
-const res = await fetch("http://localhost:5000/api/contact",{
-method:"POST",
-headers:{
-"Content-Type":"application/json"
-},
-body: JSON.stringify(formData)
-});
 
-const data = await res.json();
 
-alert(data.message);
 
-setFormData({
-name:"",
-email:"",
-phone:"",
-company:"",
-message:""
-});
 
-}catch(err){
-console.log(err);
-alert("Error submitting form");
-}
+const handleSubscribe = async () => {
+  if (!email) {
+    alert("Enter email");
+    return;
+  }
+
+  try {
+    const res = await fetch("https://fyz-backend.onrender.com/api/subscribe", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({ email })
+    });
+
+    const data = await res.json();
+
+    alert(data.message);
+    setSubscribed(true);
+
+    setTimeout(() => setSubscribed(false), 3000);
+
+    setEmail("");
+
+  } catch (err) {
+    console.log(err);
+    alert("Subscription failed");
+  }
 };
 
-const handleSubscribe = async ()=>{
-if(!email){
-alert("Enter email");
-return;
-}
-
-try{
-const res = await fetch("http://localhost:5000/api/subscribe",{
-method:"POST",
-headers:{
-"Content-Type":"application/json"
-},
-body: JSON.stringify({email})
-});
-
-const data = await res.json();
-
-alert(data.message);
-setSubscribed(true);
-
-setTimeout(()=>setSubscribed(false),3000);
-
-setEmail("");
-
-}catch(err){
-console.log(err);
-alert("Subscription failed");
-}
-};
 return (
 <div>
 

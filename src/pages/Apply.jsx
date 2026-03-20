@@ -78,7 +78,7 @@ return
 
 try{
 
-const res=await fetch("http://127.0.0.1:5000/apply",{
+const res=await fetch("https://fyz-backend.onrender.com/api/apply",{
 
 method:"POST",
 
