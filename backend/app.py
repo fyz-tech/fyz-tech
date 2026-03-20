@@ -15,7 +15,8 @@ load_dotenv()
 app = Flask(__name__)
 CORS(app)
 
-SECRET_KEY = "fyzsecretkey"
+SECRET_KEY = os.getenv("SECRET_KEY")
+app.config["SECRET_KEY"] = SECRET_KEY
 
 # ================= MongoDB Connection =================
 
