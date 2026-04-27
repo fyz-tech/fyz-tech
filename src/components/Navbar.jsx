@@ -3,6 +3,9 @@ import { FiMenu, FiX } from "react-icons/fi";
 import { Link, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
 
+// 👉 Your transparent logo
+import logo from "../assets/logoss.png";
+
 export default function Navbar() {
 
   const [open, setOpen] = useState(false);
@@ -30,7 +33,7 @@ export default function Navbar() {
       flex justify-between items-center
       rounded-3xl
       backdrop-blur-xl
-      bg-white/5
+      bg-black/40   /* 🔥 improved */
       border border-white/10
       shadow-[0_0_35px_rgba(168,85,247,0.35)]
       "
@@ -45,25 +48,34 @@ export default function Navbar() {
         "
       />
 
-      {/* Logo */}
+      {/* 🔥 LOGO */}
+      <Link to="/" className="flex items-center gap-3">
 
-      <Link to="/">
-        <motion.h1
-          whileHover={{ scale: 1.1 }}
+        <motion.img
+          src={logo}
+          alt="Fyz Tech Logo"
+          whileHover={{ scale: 1.08 }}
           className="
-          text-2xl md:text-3xl font-bold
+            w-14 md:w-16
+            object-contain
+            brightness-125 contrast-125
+            drop-shadow-[0_0_25px_rgba(168,85,247,0.9)]
+          "
+        />
+
+        <span className="
+          hidden md:block
+          text-xl font-bold
           bg-gradient-to-r from-purple-400 via-pink-500 to-blue-400
           bg-clip-text text-transparent
-          cursor-pointer
-          "
-        >
-          Fyz Tech ✨
-        </motion.h1>
+        ">
+          Tech Fyz
+        </span>
+
       </Link>
 
 
       {/* Desktop Menu */}
-
       <div className="hidden md:flex items-center gap-10">
 
         {navItems.map((item) => {
@@ -109,7 +121,6 @@ export default function Navbar() {
 
 
       {/* Mobile Icon */}
-
       <div
         className="md:hidden text-3xl text-white cursor-pointer"
         onClick={() => setOpen(!open)}
@@ -119,7 +130,6 @@ export default function Navbar() {
 
 
       {/* Mobile Menu */}
-
       {open && (
 
         <motion.div
@@ -128,7 +138,7 @@ export default function Navbar() {
           transition={{ duration: 0.4 }}
           className="
           absolute top-24 left-0 w-full
-          bg-black/90 backdrop-blur-xl
+          bg-black/95 backdrop-blur-xl
           flex flex-col items-center gap-8 py-10
           rounded-3xl shadow-2xl
           md:hidden

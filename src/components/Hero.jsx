@@ -124,14 +124,14 @@ __html: JSON.stringify({
 
 {
 "@type": "Organization",
-"name": "Fyz Tech",
+"name": "Tech Fyz",
 "url": "https://fyztech.com",
 "logo": "https://fyztech.com/logo.png"
 },
 
 {
 "@type": "LocalBusiness",
-"name": "Fyz Tech",
+"name": "Tech Fyz",
 "telephone": "+91 9500415942",
 "address": {
 "@type": "PostalAddress",
@@ -177,7 +177,7 @@ __html: JSON.stringify({
 bg-gradient-to-r from-purple-400 via-pink-500 to-blue-400
 bg-clip-text text-transparent">
 
-Fyz Tech – Future Ready Digital Solutions 🚀
+Tech Fyz – Future Ready Digital Solutions 🚀
 
 </h1>
 
@@ -399,24 +399,24 @@ Submit
 <div className="py-24 px-6 md:px-20 bg-gray-950">
 
 <h2 className="text-4xl font-bold text-center text-purple-400 mb-14">
-Why Fyz Tech?
+Why Tech Fyz?
 </h2>
 
 <div className="max-w-4xl mx-auto space-y-6">
 
 <div className="bg-gray-900 p-6 rounded-xl">
 <h3 className="text-xl font-semibold">
-Why choose Fyz Tech for Web Development?
+Why choose Tech Fyz for Web Development?
 </h3>
 <p className="text-gray-400">
-Fyz Tech builds modern websites using React,
+Tech Fyz builds modern websites using React,
 Node.js and AI powered technologies.
 </p>
 </div>
 
 <div className="bg-gray-900 p-6 rounded-xl">
 <h3 className="text-xl font-semibold">
-Does Fyz Tech provide AI & ML services?
+Does Tech Fyz provide AI & ML services?
 </h3>
 <p className="text-gray-400">
 Yes, we develop AI automation, chatbots
@@ -426,7 +426,7 @@ and intelligent applications.
 
 <div className="bg-gray-900 p-6 rounded-xl">
 <h3 className="text-xl font-semibold">
-Does Fyz Tech offer Digital Marketing?
+Does Tech Fyz offer Digital Marketing?
 </h3>
 <p className="text-gray-400">
 We provide SEO, social media marketing
@@ -450,7 +450,7 @@ AI/ML, Digital Marketing and Video Editing.
 <div className="py-24 px-6 md:px-20 bg-gradient-to-r from-gray-900 via-black to-gray-900 text-center">
 
 <h3 className="text-3xl font-bold mb-4">
-Stay Updated with <span className="text-purple-400">Fyz Tech</span>
+Stay Updated with <span className="text-purple-400">Tech Fyz</span>
 </h3>
 
 <p className="text-gray-400 mb-10">
@@ -503,7 +503,7 @@ flex items-center gap-3 animate-bounce">
 <h3 className="text-xl font-bold mb-4">Fyz Tech</h3>
 
 <p className="text-gray-400 text-sm mb-4">
-At Fyz Tech we design and develop tailored digital solutions
+At Tech Fyz we design and develop tailored digital solutions
 that solve real business problems.
 </p>
 
@@ -514,7 +514,7 @@ that solve real business problems.
 <FaFacebook/>
 </a>
 
-<a href="https://instagram.com/fyz.tech" 
+<a href="https://instagram.com/tech.fyz" 
 target="_blank"
 rel="noopener noreferrer" className="text-gray-400 hover:text-pink-500">
 <FaInstagram/>
@@ -564,7 +564,7 @@ rel="noopener noreferrer" className="text-gray-400 hover:text-pink-500">
 Thozhi code, Nagercoil, Tamil Nadu
 </p>
 
-<p className="text-gray-400">info@fyztech.com</p>
+<p className="text-gray-400">info@techfyz.com</p>
 
 <p className="text-gray-400 mt-2">
 +91 9488464218
@@ -584,7 +584,7 @@ Thozhi code, Nagercoil, Tamil Nadu
 </div>
 
 <div className="text-center text-gray-500 mt-10">
-© 2026 fyz Tech. All Rights Reserved.
+© 2026 Tech fyz. All Rights Reserved.
 </div>
 
 </footer>

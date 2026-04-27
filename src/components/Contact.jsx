@@ -64,7 +64,7 @@ export default function Contact() {
         >
 
           <h2 className="text-4xl md:text-5xl font-bold">
-            Contact Fyz Tech
+            Contact Tech Fyz
           </h2>
 
           <p className="text-gray-400 text-lg">
@@ -90,7 +90,7 @@ export default function Contact() {
             {/* INSTAGRAM */}
 
             <a
-              href="https://instagram.com/yourusername"
+              href="https://instagram.com/tech.fyz" 
               target="_blank"
               rel="noopener noreferrer"
               className="bg-white/10 p-4 rounded-2xl hover:scale-110 transition"
