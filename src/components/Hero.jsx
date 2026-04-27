@@ -125,8 +125,8 @@ __html: JSON.stringify({
 {
 "@type": "Organization",
 "name": "Tech Fyz",
-"url": "https://fyztech.com",
-"logo": "https://fyztech.com/logo.png"
+"url": "https://techfyz.com",
+"logo": "https://techfyz.com/logoss.png"
 },
 
 {
@@ -177,7 +177,7 @@ __html: JSON.stringify({
 bg-gradient-to-r from-purple-400 via-pink-500 to-blue-400
 bg-clip-text text-transparent">
 
-Tech Fyz – Future Ready Digital Solutions 🚀
+Tech Fyz – Future Ready Digital Solutions 
 
 </h1>
 
