@@ -500,7 +500,7 @@ flex items-center gap-3 animate-bounce">
 
 <div>
 
-<h3 className="text-xl font-bold mb-4">Fyz Tech</h3>
+<h3 className="text-xl font-bold mb-4">Tech Fyz</h3>
 
 <p className="text-gray-400 text-sm mb-4">
 At Tech Fyz we design and develop tailored digital solutions
