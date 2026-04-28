@@ -49,10 +49,10 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="py-32 px-6 md:px-20 bg-gray-900 text-white"
+      className="pt-24 md:pt-32 pb-16 px-4 md:px-20 bg-gray-900 text-white"
     >
 
-      <div className="grid md:grid-cols-2 gap-16 items-center max-w-6xl mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center max-w-6xl mx-auto">
 
         {/* LEFT SIDE */}
 
@@ -63,7 +63,7 @@ export default function Contact() {
           className="space-y-8"
         >
 
-          <h2 className="text-4xl md:text-5xl font-bold">
+          <h2 className="text-3xl md:text-5xl font-bold">
             Contact Tech Fyz
           </h2>
 
@@ -73,7 +73,7 @@ export default function Contact() {
 
           {/* SOCIAL ICONS */}
 
-          <div className="flex gap-5 text-2xl">
+          <div className="flex flex-wrap gap-4 text-xl">
 
             {/* FACEBOOK */}
 
@@ -144,7 +144,7 @@ export default function Contact() {
               Subscribe for Updates
             </h3>
 
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-3">
 
               <input
                 type="email"
@@ -169,7 +169,7 @@ export default function Contact() {
 
           <button
             onClick={() => navigate("/apply")}
-            className="bg-purple-600 px-8 py-4 rounded-2xl font-semibold text-lg hover:bg-purple-700 transition shadow-lg"
+            className="bg-purple-600 px-6 py-3 rounded-2xl font-semibold text-base md:text-lg hover:bg-purple-700 transition shadow-lg"
           >
             Book Call
           </button>
@@ -181,7 +181,7 @@ export default function Contact() {
         <motion.img
           src={contactImg}
           alt="Global Clients"
-          className="rounded-3xl shadow-2xl w-full max-w-md"
+          className="rounded-3xl shadow-2xl w-full max-w-sm mx-auto"
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1 }}
@@ -195,7 +195,7 @@ export default function Contact() {
         href="https://wa.me/919488464218?text=Hello%20Fyz%20Tech"
         target="_blank"
         rel="noopener noreferrer"
-        className="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full text-3xl shadow-xl hover:scale-110 transition"
+        className="fixed bottom-5 right-4 md:right-6 bg-green-500 text-white p-4 rounded-full text-3xl shadow-xl hover:scale-110 transition"
       >
         <FaWhatsapp />
       </a>
