@@ -366,7 +366,7 @@ We build scalable platforms using modern technologies.
 <h3 className="text-2xl font-bold mb-6 text-center">
 Here For You
 </h3>
-
+<div className="max-w-xl md:max-w-2xl mx-auto bg-white/80 backdrop-blur-md p-6 md:p-10 rounded-2xl shadow-xl"></div>
 <form onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-2 gap-4">
 
 <input name="name" value={formData.name} onChange={handleChange} placeholder="Name*" className="w-full p-3 rounded-lg"/>
@@ -488,7 +488,7 @@ flex items-center gap-3 animate-bounce">
 <span className="text-2xl">✅</span>
 
 <span>Subscribed Successfully!</span>
-
+ 
 </div>
 
 )}
