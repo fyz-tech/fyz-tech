@@ -112,7 +112,7 @@ const handleSubscribe = async () => {
 };
 
 return (
-<div>
+<div className="pt-24 md:pt-32">
 
 {/* ===== SEO SCHEMA ===== */}
 <script
@@ -132,7 +132,7 @@ __html: JSON.stringify({
 {
 "@type": "LocalBusiness",
 "name": "Tech Fyz",
-"telephone": "+91 9500415942",
+"telephone": "+91 9025655128",
 "address": {
 "@type": "PostalAddress",
 "addressLocality": "Nagercoil",
@@ -169,11 +169,11 @@ __html: JSON.stringify({
 
 <div className="min-h-screen flex items-center px-6 md:px-20">
 
-<div className="grid md:grid-cols-2 gap-12 items-center">
+<div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
 
 <div>
 
-<h1 className="text-5xl md:text-5xl font-bold mb-6
+<h1 className="text-3xl md:text-5xl font-bold mb-6
 bg-gradient-to-r from-purple-400 via-pink-500 to-blue-400
 bg-clip-text text-transparent">
 
@@ -207,7 +207,7 @@ Start Project
 
 {/* STATS */}
 
-<div className="grid grid-cols-2 gap-6">
+<div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
 
 {[
 ["100+","Projects"],
@@ -236,7 +236,7 @@ Start Project
 Technologies We Use
 </h2>
 
-<div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:grid-cols-2 gap-16 items-center">
+<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-10">
 
 <div className="overflow-hidden w-full">
 
@@ -324,7 +324,7 @@ Building Future-Ready Platforms with Perfection
 We build scalable platforms using modern technologies.
 </p>
 
-<div className="grid grid-cols-2 grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-10">
 
 <div className="bg-gray-100 p-4 rounded-xl text-center">
 <SiTensorflow size={30} className="text-orange-500 mx-auto"/> AI
@@ -367,7 +367,7 @@ We build scalable platforms using modern technologies.
 Here For You
 </h3>
 
-<form onSubmit={handleSubmit} className="grid grid-cols-2 grid-cols-1 md:grid-cols-2 gap-4">
+<form onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-2 gap-4">
 
 <input name="name" value={formData.name} onChange={handleChange} placeholder="Name*" className="w-full p-3 rounded-lg"/>
 
@@ -496,7 +496,7 @@ flex items-center gap-3 animate-bounce">
 
 <footer className="bg-black px-6 md:px-20 py-16 border-t border-gray-800">
 
-<div className="grid md:grid-cols-4 grid-cols-1 sm:grid-cols-2 gap-10">
+<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
 
 <div>
 
@@ -547,11 +547,11 @@ rel="noopener noreferrer" className="text-gray-400 hover:text-pink-500">
 <h3 className="font-bold mb-4">Quick Links</h3>
 
 <ul className="space-y-2 text-gray-400">
-<li onClick={()=>navigate("/WebSolutions")}>WebSolutions</li>
-<li onClick={()=>navigate("/Services")}>Services</li>
-<li onClick={()=>navigate("/Marketing")}>Marketing</li>
-<li onClick={()=>navigate("/Internship")}>Internship</li>
-<li onClick={()=>navigate("/Contact")}>Contact</li>
+<li onClick={()=>navigate("/website")}>Web Solutions</li>
+<li onClick={()=>navigate("/services")}>Services</li>
+<li onClick={()=>navigate("/marketing")}>Marketing</li>
+<li onClick={()=>navigate("/internship")}>Internship</li>
+<li onClick={()=>navigate("/contact")}>Contact</li>
 </ul>
 
 </div>
@@ -594,7 +594,7 @@ Thozhi code, Nagercoil, Tamil Nadu
 
 <a
 href="https://wa.me/919488464218"
-className="fixed bottom-6 right-6 bg-green-500 p-4 rounded-full text-white text-2xl">
+className="fixed bottom-6 right-4 md:right-6 bg-green-500 p-4 rounded-full text-white text-2xl">
 
 <FaWhatsapp/>
 
