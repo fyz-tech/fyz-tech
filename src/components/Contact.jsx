@@ -113,7 +113,7 @@ export default function Contact() {
             {/* WHATSAPP */}
 
             <a
-              href="https://wa.me/919488464218?text=Hello%20Fyz%20Tech%20I%20am%20interested%20in%20your%20service"
+              href="https://wa.me/919025655128?text=Hello%20Fyz%20Tech%20I%20am%20interested%20in%20your%20service"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-white/10 p-4 rounded-2xl hover:scale-110 transition"
@@ -192,7 +192,7 @@ export default function Contact() {
       {/* FLOATING WHATSAPP BUTTON */}
 
       <a
-        href="https://wa.me/919488464218?text=Hello%20Fyz%20Tech"
+        href="https://wa.me/919025655128?text=Hello%20Fyz%20Tech"
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-5 right-4 md:right-6 bg-green-500 text-white p-4 rounded-full text-3xl shadow-xl hover:scale-110 transition"

@@ -593,7 +593,7 @@ Thozhi code, Nagercoil, Tamil Nadu
 {/* WHATSAPP */}
 
 <a
-href="https://wa.me/919488464218"
+href="https://wa.me/919025655128"
 className="fixed bottom-6 right-4 md:right-6 bg-green-500 p-4 rounded-full text-white text-2xl">
 
 <FaWhatsapp/>
