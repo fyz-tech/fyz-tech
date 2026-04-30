@@ -125,7 +125,7 @@ export default function Contact() {
             {/* LINKEDIN */}
 
             <a
-              href="https://linkedin.com/in/yourusername"
+              href="https://www.linkedin.com/company/techfyz/"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-white/10 p-4 rounded-2xl hover:scale-110 transition"
